@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "nodemonConfig": {
+    "delay": 3000
+  },
   "scripts": {
-    "watch": "nodemon",
+    "watch": "nodemon ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +27,9 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "node": "^19.0.0"
   }
 }

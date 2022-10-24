@@ -1,7 +1,10 @@
+const chalk = require('chalk');
+
+const { log } = console;
 class EmailService {
   // eslint-disable-next-line class-methods-use-this
   send(email) {
-    console.log(`Sending email to ${email}`);
+    log(chalk.whiteBright(`Sending email to ${email}`));
   }
 }
 
